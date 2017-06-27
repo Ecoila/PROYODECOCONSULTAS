@@ -1,0 +1,18 @@
+   
+			<table border="1">seleccione el Tipo de Reclamo <span  class="required"></span></label>
+     	  <tr>
+       		<td>Id</td>
+          <td>Tipo de Reclamo </td>
+       		<td>Observaciones </td>
+       		<td>Fecha </td>
+      	</tr>
+       <% var i; for(i-0;i<reclamo.length; i++) {%>  
+      	<tr>
+        seleccione el Tipo de Reclamo <span  class="required"></span>
+        	<td><%= id %></td>
+          <td><%= reclamo[i].tipoReclamo %></td>
+        	<td><%= reclamo[i].observacion %></td>
+        	<td><%= reclamo[i].fecha %></td>
+    	</tr>
+      <%}%>
+     </table>

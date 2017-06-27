@@ -1,0 +1,23 @@
+<form method="post" action="guardarReclamos" >
+	
+    <div>
+	    <label >seleccione el Tipo de Reclamo <span  class="required"></span></label>
+	    <select name="reclamo[tipoReclamo]" id="tipoReclamo" value="<%= reclamo.tipoReclamo %>" class="field-select" >
+	    	<option>ODECO 1</option>
+	    	<option>ODECO 2</option>
+	    	<option>ODECO 3</option>
+	    </select>
+	</div>
+	<div>
+	    <label for="observacion">describa la Observaciones:</label>
+	    <input type="text" id="observacion" name="reclamo[observacion]" value="<%= reclamo.observacion %>">
+	</div>
+    <div>
+	    <label for="fecha">ingrese la Fecha:</label>
+	    <input type="text" id="fecha" name="reclamo[fecha]" value="<%= reclamo.fecha %>">
+	</div>
+	<div>
+    	<input type="submit" name="envio" value="Registrar Reclamo">
+     </div> 
+
+</form>

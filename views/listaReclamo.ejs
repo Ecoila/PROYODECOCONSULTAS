@@ -1,0 +1,23 @@
+<form method="post" action="muestraReclamo" >
+  
+<h3> Bien benido a<%= title%></h3>
+			
+  <div>
+      <table border="1">seleccione el Tipo de Reclamo <span  class="required"></span></label>
+          <tr>
+            <td>Tipo Reclamo</td>
+            <td> Observaciones</td>
+            <td> Fecha</td>
+          </tr> 
+          <tr>
+            <td><%= reclamo.tipoReclamo %></td>
+            <td><%= reclamo.observacion %></td>
+            <td><span><a href="/fechaReclamos"><%= reclamo.fecha %></a></span></td>
+          </tr>
+      
+      </table>
+  </div>
+  <footer class="main" id="f1">
+        <a href="">inicio</a>
+      </footer>
+</from>
